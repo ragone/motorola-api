@@ -12,4 +12,8 @@ A simple HTTP server in Clojure.
 ## Building and running Docker
 
   1. `docker-compose up` to run the containers
-  3. Go to [localhost:3000](http://localhost:3000)
+  2. Go to [localhost:3000](http://localhost:3000)
+
+## API Documentation and testing
+
+API documentation is generated using Swagger and can be accessed by going to [localhost:3000/swagger](http://localhost:3000/swagger)
