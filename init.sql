@@ -1,0 +1,11 @@
+CREATE TABLE radio (
+  id INTEGER PRIMARY KEY,
+  alias VARCHAR(255) UNIQUE NOT NULL,
+  location VARCHAR(255)
+);
+
+CREATE TABLE allowed_location (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  radio INTEGER REFERENCES radio(id)
+);
