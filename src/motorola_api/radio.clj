@@ -10,6 +10,7 @@
 ;; Validation
 
 (defn valid-location? [location allowed-locations]
+  "Return non-nil if LOCATION exists in ALLOWED-LOCATIONS."
   (some #(= location %)
         (map (fn [allowed-location]
                (:name allowed-location))
